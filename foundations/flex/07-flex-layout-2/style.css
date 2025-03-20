@@ -24,17 +24,35 @@ body {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 15px;
+  box-sizing: border-box;
+
   }
+
+  .sidebar ul {
+    list-style: none;
+  }
+
+  .sidebar a {
+    font-size: 24px; /* Makes text match the expected design */
+    color: white; /* Ensures text is white */
+    text-decoration: none; /* Removes the default underline */
+    display: block; /* Ensures full width clickable area */
+    padding: 10px;
+  }
+
 
   .body {
     display: flex;
+    padding-right: 150px;
   }
 
   .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin: 10px;
+    gap: 15px;
+    margin: 25px;
   }
   
   .card {
@@ -44,6 +62,7 @@ body {
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
     padding: 16px;
+    padding-bottom: 100px;
   }
   
 ul {
